@@ -10,11 +10,13 @@ class Cow(Animal):
         self.owner=owner
         super().__init__(color,breed,young_one)
     def color(self):
-        print(f"the color is {self.color}")
+        return f"the color is {self.color}"
     def breed(self):
         print(f"the breed of the animal is {self.breed}")
     def youngone(self):
         print(f"the young one of the animal is {self.young_one}")    
 girraffe = Animal("brown","local","girraffe")
-# print(girraffe())
-cow = Cow("Exotic","calf","calf","Richard")
+goat = Cow("brown","local","kid")
+print(girraffe.__repr__())
+print(goat.color())
+cow = Cow("Exotic","calf","calf","richard")
